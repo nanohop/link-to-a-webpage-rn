@@ -14,11 +14,14 @@ export default class Home extends Component {
   };
 
   option1 = () => {
-
+    Linking.openURL('https://egghead.io')
   }
 
   option2 = () => {
-    
+    this.props.navigation.navigate(
+      'Browser',
+      { url: 'https://egghead.io' }
+    )
   }
 
   render() {
